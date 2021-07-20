@@ -23,7 +23,7 @@ Traveller.prototype.getJourneysByTransport = function (transport) {
 // Test not passing - right journeys being returned as actual but expected says 'false'
 Traveller.prototype.getJourneysByMinDistance = function (minDistance) {
   return this.journeys.every((journey) => {
-    return journey.minDistance >= minDistance;
+    return journey.distance > minDistance;
   });
 };
 
